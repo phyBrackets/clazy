@@ -1,0 +1,2 @@
+unused-result-check/main.cpp:10:5: warning: Result of const member function is not used. [-Wclazy-unused-result-check] 
+unused-result-check/main.cpp:28:34: warning: Result of const member function is not used. [-Wclazy-unused-result-check]

@@ -53,6 +53,7 @@
 #include "checks/manuallevel/tr-non-literal.h"
 #include "checks/manuallevel/unexpected-flag-enumerator-value.h"
 #include "checks/manuallevel/unneeded-cast.h"
+#include "checks/manuallevel/unused-result-check.h"
 #include "checks/manuallevel/use-arrow-operator-instead-of-data.h"
 #include "checks/manuallevel/use-chrono-in-qtimer.h"
 #include "checks/level0/connect-by-name.h"
@@ -179,6 +180,7 @@ void CheckManager::registerChecks()
     registerCheck(check<OverloadedSignal>("overloaded-signal", CheckLevel0,  RegisteredCheck::Option_VisitsDecls));
 #ifndef CLAZY_DISABLE_AST_MATCHERS
     registerCheck(check<QColorFromLiteral>("qcolor-from-literal", CheckLevel0,  RegisteredCheck::Option_VisitsStmts));
+    registerCheck(check<ResultNotUsedChecker>("unused-result-check", ManualCheckLevel,  RegisteredCheck::Option_VisitsStmts));
 #endif
     registerCheck(check<QDateTimeUtc>("qdatetime-utc", CheckLevel0,  RegisteredCheck::Option_VisitsStmts));
     registerFixIt(1, "fix-qdatetime-utc", "qdatetime-utc");
