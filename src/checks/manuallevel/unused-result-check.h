@@ -1,7 +1,8 @@
 /*
     This file is part of the clazy static checker.
 
-    Copyright (C) 2016-2017 Sergio Martins <smartins@kde.org>
+    Copyright (C) 2023 Klarälvdalens Datakonsult AB, a KDAB Group company, info@kdab.com
+    Author: Shivam Kunwar <shivam.kunwar@kdab.com>
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Library General Public
