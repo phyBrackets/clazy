@@ -1,8 +1,7 @@
 {
     "tests" : [
         {
-            "command" : "-I/home/shivam/clazy/../Qt/6.6.0/gcc_64/include -I/home/shivam/clazy/../Qt/6.6.0/gcc_64/include/QtCore/QtObject",
-            "filename" : "main.cpp" 
+            "filename" : "main.cpp"
         }
     ]
 }
